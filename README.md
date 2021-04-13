@@ -1,0 +1,1 @@
+# android-veracity-sdk-sample
