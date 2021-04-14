@@ -1,1 +1,1 @@
-# android-veracity-sdk-sample
+# android-veracity-sdk-sample updated
