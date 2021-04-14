@@ -1,0 +1,60 @@
+<resources>
+    <!-- app name -->
+    <string name="app_name">VeracitySampleApp</string>
+
+    <!-- AuthenticationFragment -->
+    <string name="btn_start">Start</string>
+    <string name="sample_app_title">Authentication SDK</string>
+    <string name="connection_offline">You are offline, please connect to the internet</string>
+
+    <!-- CameraFragment-->
+    <string name="title_camera">Take overview photo</string>
+    <string name="message_camera">Take a photo when the entire\nitem is in the frame</string>
+
+    <!-- ImageCropFragment -->
+    <string name="crop_btn">Crop</string>
+    <string name="crop_title">Crop background</string>
+    <string name="crop_message">Adjust the corners and\ncrop the background</string>
+
+    <!-- QualityCheckFragment -->
+    <string name="quality_check_title">Picture quality</string>
+    <string name="quality_check_message">Please confirm you can clearly see the entire item without any borders.</string>
+    <string name="quality_check_btn">Confirm</string>
+    <string name="quality_check_redo">Redo crop</string>
+
+    <!-- DimensionsFragment -->
+    <string name="dimensions_title">Set dimensions</string>
+    <string name="width">Width (cm)</string>
+    <string name="width_hint">Width</string>
+    <string name="height">Height (cm)</string>
+    <string name="height_hint">Height</string>
+    <string name="dimensions_wrong">Fill in item\'s exact dimensions. Dimensions needs to be larger than 4 cm and smaller than 5000 cm in width and height.</string>
+
+    <!-- ProtectFragment & VerifyFragment -->
+    <string name="item_detail_location">Location:</string>
+    <string name="item_detail_age">Age:</string>
+    <string name="item_detail_protected_by_code">Protected by Physical Code</string>
+    <string name="item_detail_title_secondary">Item details</string>
+    <string name="item_detail_verify_item">Verify item</string>
+    <string name="item_detail_verify_item_again">Verify item again</string>
+    <string name="item_detail_btn_fp_again">Take photos again</string>
+    <string name="item_detail_btn_fp">Try retaking photos</string>
+    <string name="item_detail_failed">Unable to protect item</string>
+    <string name="item_detail_not_verified">Not verified</string>
+    <string name="item_detail_btn_failed">Start protection over</string>
+    <string name="item_detail_title_pending">Pending…</string>
+    <string name="item_detail_desc_pending_connection">Waiting for internet connection</string>
+    <string name="item_detail_desc_pending">Take the fingerprint photos to start the protection process.</string>
+    <string name="verify_detail_text_uploading">Uploading</string>
+    <string name="verify_detail_text_uploading_secondary">The photos are now being uploaded to our servers.</string>
+    <string name="verify_detail_text_analyzing">Analyzing&#8230;</string>
+    <string name="verify_detail_text_analyzing_secondary">You\'ll be notified once the system is done analyzing the photos.</string>
+    <string name="item_detail_info_title">Loading verification info</string>
+    <string name="item_detail_info_desc">Please wait, we are downloading all info necessary for verification.</string>
+    <string name="item_detail_info_title_failed">Failed to load info</string>
+    <string name="item_detail_info_desc_failed">Please connect to the internet and try again.</string>
+    <string name="item_detail_btn_try_again">Try again</string>
+    <string name="verify_detail_text_verified_primary">Item successfully verified</string>
+    <string name="verify_detail_text_verified_secondary">This item was verified as authentic.</string>
+
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/AuthenticateFragment">
+
+    <fragment
+        android:id="@+id/AuthenticateFragment"
+        android:name="com.veracity.protocol.sample.ui.AuthenticateFragment"
+        tools:layout="@layout/fragment_authenticate">
+
+        <action
+            android:id="@+id/action_AuthenticateFragment_to_CameraFragment"
+            app:destination="@id/CameraFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/CameraFragment"
+        android:name="com.veracity.protocol.sample.ui.CameraFragment"
+        tools:layout="@layout/fragment_camera">
+
+        <action
+            android:id="@+id/action_CameraFragment_to_ImageCropFragment"
+            app:destination="@id/ImageCropFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_CameraFragment_to_AuthenticateFragment"
+            app:popUpTo="@id/AuthenticateFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ImageCropFragment"
+        android:name="com.veracity.protocol.sample.ui.ImageCropFragment"
+        tools:layout="@layout/fragment_image_crop">
+
+        <action
+            android:id="@+id/action_ImageCropFragment_to_QualityCheckFragment"
+            app:destination="@id/QualityCheckFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_ImageCropFragment_to_CameraFragment"
+            app:popUpTo="@id/CameraFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/QualityCheckFragment"
+        android:name="com.veracity.protocol.sample.ui.QualityCheckFragment"
+        tools:layout="@layout/fragment_quality_check">
+
+        <action
+            android:id="@+id/action_QualityCheckFragment_to_DimensionsFragment"
+            app:destination="@id/DimensionsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_QualityCheckFragment_to_ImageCropFragment"
+            app:popUpTo="@id/ImageCropFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DimensionsFragment"
+        android:name="com.veracity.protocol.sample.ui.DimensionsFragment"
+        tools:layout="@layout/fragment_dimensions">
+
+        <action
+            android:id="@+id/action_DimensionsFragment_to_ProtectFragment"
+            app:destination="@id/ProtectFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            />
+        <action
+            android:id="@+id/action_DimensionsFragment_to_QualityCheckFragment"
+            app:popUpTo="@id/QualityCheckFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProtectFragment"
+        android:name="com.veracity.protocol.sample.ui.ProtectFragment"
+        tools:layout="@layout/fragment_protect_verify">
+
+        <argument
+            android:name="ItemWidth"
+            app:argType="float" />
+        <argument
+            android:name="ItemHeight"
+            app:argType="float" />
+        <action
+            android:id="@+id/action_ProtectFragment_to_VerifyFragment"
+            app:destination="@id/VerifyFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            />
+        <action
+            android:id="@+id/action_ProtectFragment_to_CameraFragment"
+            app:popUpTo="@+id/CameraFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/VerifyFragment"
+        android:name="com.veracity.protocol.sample.ui.VerifyFragment"
+        tools:layout="@layout/fragment_protect_verify">
+
+        <argument
+            android:name="ItemPublicId"
+            android:defaultValue=""
+            app:argType="string" />
+        <action
+            android:id="@+id/action_VerifyFragment_to_CameraFragment"
+            app:popUpTo="@+id/CameraFragment"
+            />
+    </fragment>
+
+</navigation>

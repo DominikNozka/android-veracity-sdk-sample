@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingPrefix"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/message_popup_lay"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_oval">
+
+        <TextView
+            android:id="@+id/message_popup_text"
+            android:text="@string/ar_point_camera"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/text_color"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fontPath="fonts/Regular.otf"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- primary app colors -->
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#00C7D9</color>
+
+    <!-- text colors -->
+    <color name="colorText">#1A1A1A</color>
+    <color name="colorTextWarning">#CC1F2B</color>
+    <color name="colorTextAnalyzing">#003A40</color>
+
+    <!-- button colors -->
+    <color name="colorButtonTint">#1A1A1A</color>
+    <color name="colorButtonText">#FFFFFF</color>
+    <color name="colorButtonSecondaryTint">#00C7D9</color>
+    <color name="colorButtonSecondaryText">#00454D</color>
+    <color name="colorPrgIntermediate">#00C7D9</color>
+
+    <!-- protection & verification bar colors -->
+    <color name="alert_red">#E52E3B</color>
+    <color name="light_red_bg">#FFE5E7</color>
+    <color name="light_gray">#F2F2F2</color>
+    <color name="verify_green_bg">#DAFFE8</color>
+    <color name="verify_green">#008031</color>
+
+</resources>
