@@ -62,9 +62,7 @@ class AuthenticateFragment : Fragment(), Authenticate.LoginListener {
         else {
             prg.visibility=View.VISIBLE
 
-            //authenticate.logIn("email","password",this)
-            TODO("Please contact Veracity Protocol to get the access token alongside with credentials" +
-                    "access token is located at gradle.properties file")
+            authenticate.logIn("domi.nik@veracityprotocol.org","dominik",this)
         }
     }
 

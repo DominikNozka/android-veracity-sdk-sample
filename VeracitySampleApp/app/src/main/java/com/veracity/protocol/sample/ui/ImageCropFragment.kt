@@ -63,7 +63,6 @@ class ImageCropFragment : Fragment(), CropImageView.CropEvent, CropImageView.Pos
     }
 
     override fun onImageCropped(jpegCropped: File, thumbnail: File) {
-
         findNavController().navigate(ImageCropFragmentDirections.actionImageCropFragmentToQualityCheckFragment())
     }
 

@@ -46,7 +46,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     //Veracity SDK
-    implementation 'com.github.DominikNozka:veracity-sdk:3.0.9'
+    implementation 'com.github.DominikNozka:veracity-sdk:3.1.4'
     implementation files('libs/ar-navigator-lib-release-x.aar')
 
     // CameraX
