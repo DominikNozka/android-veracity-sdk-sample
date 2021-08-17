@@ -62,7 +62,7 @@ class AuthenticateFragment : Fragment(), Authenticate.LoginListener {
         else {
             prg.visibility=View.VISIBLE
 
-            authenticate.logIn("domi.nik@veracityprotocol.org","dominik",this)
+            authenticate.logIn("","",this)
         }
     }
 
