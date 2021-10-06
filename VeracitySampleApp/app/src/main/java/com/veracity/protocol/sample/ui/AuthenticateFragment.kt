@@ -62,7 +62,7 @@ class AuthenticateFragment : Fragment(), Authenticate.LoginListener {
         else {
             prg.visibility=View.VISIBLE
 
-            authenticate.logIn("","",this)
+            authenticate.logIn("email","password",this)
         }
     }
 
